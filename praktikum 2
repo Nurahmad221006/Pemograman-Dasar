@@ -1,0 +1,244 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPdMswe5VjnlHoSym9YZOdn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Nurahmad221006/Pemograman-Dasar/blob/main/praktikum%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "LATIHAN 1"
+      ],
+      "metadata": {
+        "id": "zdXK0iW0xoVP"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "ru9QJiK-xnug"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tegangan_panel = 18\n",
+        "arus_panel = 6\n",
+        "jenis_sel_panel = \"Monocrystalline\"\n",
+        "\n",
+        "print(\"Tegangan panel surya:\", tegangan_panel, \"Volt\")\n",
+        "print(\"Arus panel surya:\", arus_panel, \"Ampere\")\n",
+        "print(\"Jenis sel panel surya:\", jenis_sel_panel)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UeDdWhvUvYA5",
+        "outputId": "979d368e-7dc1-4c4c-f95c-0e11019d7771"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Tegangan panel surya: 18 Volt\n",
+            "Arus panel surya: 6 Ampere\n",
+            "Jenis sel panel surya: Monocrystalline\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "LATIHAN 2"
+      ],
+      "metadata": {
+        "id": "LMxgugm8xqC3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fb4ccfab"
+      },
+      "source": [
+        "# Variabel untuk masing-masing tipe data (komponen elektronika)\n",
+        "resistor_nilai = 100            # int (Ohm)\n",
+        "kapasitor_kapasitansi = 4.7      # float (mikroFarad)\n",
+        "dioda_terpasang = True           # bool (terpasang atau tidak)\n",
+        "jenis_chip = \"Microcontroller\"   # str\n",
+        "\n",
+        "# Mencetak nilai dan tipe tiap variabel\n",
+        "print(f\"Nilai resistor: {resistor_nilai}, Tipe: {type(resistor_nilai)}\")\n",
+        "print(f\"Nilai kapasitor: {kapasitor_kapasitansi}, Tipe: {type(kapasitor_kapasitansi)}\")\n",
+        "print(f\"Status dioda: {dioda_terpasang}, Tipe: {type(dioda_terpasang)}\")\n",
+        "print(f\"Jenis chip: {jenis_chip}, Tipe: {type(jenis_chip)}\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "LATIHAN 3"
+      ],
+      "metadata": {
+        "id": "IsGOzoBhxsln"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cd9490e6"
+      },
+      "source": [
+        "# Menentukan tipe data yang sesuai dan membuat variabel\n",
+        "nama_unit = \"PLTS Nunukan\"            # str\n",
+        "jumlah_panel = 240                      # int\n",
+        "tegangan_keluaran = 48.5                # float\n",
+        "sedang_beroperasi = True                # bool\n",
+        "\n",
+        "# Mencetak nilai dan tipe tiap variabel\n",
+        "print(f\"Nama unit: {nama_unit}, Tipe: {type(nama_unit)}\")\n",
+        "print(f\"Jumlah panel: {jumlah_panel}, Tipe: {type(jumlah_panel)}\")\n",
+        "print(f\"Tegangan keluaran: {tegangan_keluaran}, Tipe: {type(tegangan_keluaran)}\")\n",
+        "print(f\"Sedang beroperasi: {sedang_beroperasi}, Tipe: {type(sedang_beroperasi)}\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "LATIHAN 4"
+      ],
+      "metadata": {
+        "id": "NnAqxzASxuXP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fc569a34"
+      },
+      "source": [
+        "tegangan_harian = [217.5, 219.0, 220.3, 218.7, 221.1, 216.9]\n",
+        "\n",
+        "# (a) Cetak pembacaan pertama dan terakhir memakai indeks\n",
+        "print(f\"Pembacaan pertama: {tegangan_harian[0]} V\")\n",
+        "print(f\"Pembacaan terakhir: {tegangan_harian[-1]} V\")\n",
+        "\n",
+        "# (b) Tambahkan satu pembacaan baru 222.0 dengan append()\n",
+        "tegangan_harian.append(222.0)\n",
+        "print(f\"Daftar tegangan setelah ditambah: {tegangan_harian}\")\n",
+        "\n",
+        "# (c) Cetak jumlah total data dengan len()\n",
+        "print(f\"Jumlah total data: {len(tegangan_harian)}\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "LATIHAN 5"
+      ],
+      "metadata": {
+        "id": "BU1DW8HFxwOf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Buat dictionary spesifikasi motor listrik\n",
+        "motor_listrik = {\n",
+        "    \"nama\": \"Motor Induksi A\",\n",
+        "    \"daya_kW\": 7.5,\n",
+        "    \"tegangan_V\": 380,\n",
+        "    \"rpm\": 1450\n",
+        "}\n",
+        "\n",
+        "# Cetak salah satu nilai lewat key-nya (misalnya, nama)\n",
+        "print(f\"Nama motor: {motor_listrik['nama']}\")\n",
+        "\n",
+        "# Ubah nilai rpm\n",
+        "motor_listrik['rpm'] = 1500\n",
+        "\n",
+        "# Cetak ulang seluruh dictionary setelah perubahan\n",
+        "print(\"Spesifikasi motor setelah update RPM:\")\n",
+        "print(motor_listrik)"
+      ],
+      "metadata": {
+        "id": "l0lBEYfHv4ux"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "LATIHAN 6"
+      ],
+      "metadata": {
+        "id": "cw57FJuCxxcH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pembangkit = [\n",
+        "    {\"nama\": \"Unit-1\", \"kapasitas_MW\": 100, \"status\": \"operasi\"},\n",
+        "    {\"nama\": \"Unit-2\", \"kapasitas_MW\": 150, \"status\": \"operasi\"},\n",
+        "    {\"nama\": \"Unit-3\", \"kapasitas_MW\": 80,  \"status\": \"pemeliharaan\"},\n",
+        "]\n",
+        "\n",
+        "# (a) Cetak nama unit kedua\n",
+        "print(f\"Nama unit kedua: {pembangkit[1]['nama']}\")\n",
+        "\n",
+        "# (b) Ubah status salah satu unit (misal, Unit-2 menjadi 'siaga')\n",
+        "pembangkit[1]['status'] = 'siaga'\n",
+        "\n",
+        "# (c) Tambahkan satu unit baru ke list dengan append()\n",
+        "pembangkit.append({\"nama\": \"Unit-4\", \"kapasitas_MW\": 120, \"status\": \"uji coba\"})\n",
+        "\n",
+        "# (d) Cetak seluruh data\n",
+        "print(\"Data unit pembangkit setelah perubahan:\")\n",
+        "for unit in pembangkit:\n",
+        "    print(unit)"
+      ],
+      "metadata": {
+        "id": "vbceofr8wwHo"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
